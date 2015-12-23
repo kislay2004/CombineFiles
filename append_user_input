@@ -1,0 +1,16 @@
+__author__ = 'CombineFiles'
+x= raw_input("first file name \n")
+y = raw_input("second file name \n")
+separator= str(raw_input("any string"))
+file_names = [x , y]
+with open("result_file.txt" , "w") as f:
+    for fname in file_names:
+       with open(fname,"rb") as to_file:
+            while True:
+                line=to_file.readline()
+                f.write(line)
+                if not line:
+                    f.write("\n" + separator + "\n")
+                    break
+                #process(line)
+f.close()
