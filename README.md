@@ -1,2 +1,5 @@
 # FileComiber
-A python project to combine files with different options
+A python project to combine or merge files with different options.
+
+
+# Current Status : Work in Proress
